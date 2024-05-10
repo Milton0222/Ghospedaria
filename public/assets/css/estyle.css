@@ -1,0 +1,493 @@
+
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+height:100vh;
+display: flex;
+background-color: red;
+}
+
+ 
+/*tabelas*/
+.tabella{
+ 
+  flex-wrap: nowrap;
+  overflow: auto;
+ 
+  white-space: nowrap;
+}
+
+.mettodos .bbtnn{
+  margin: 0 4px;
+   border-radius: 5px;
+   padding: 4px 10px;
+   background-color: #08722d;
+   color: #fff; 
+   transition: all .5s ease-in-out;
+}
+
+
+.mettodos .apagar-bbtnn{
+   border-radius: 5px;
+   padding: 4px 10px;
+   background-color: #960b0b;
+   color: #fff; 
+   transition: all .5s ease-in-out;
+}
+.mettodos .aadd{
+   border-radius: 5px;
+   padding: 4px 10px;
+   background-color: #0b5096;
+   color: #fff; 
+   transition: all .5s ease-in-out;
+}
+
+
+.mettodos .aadd:hover,
+.mettodos .bbtnn:hover,
+.mettodos .apagar-bbtnn:hover{
+transform: scaleX(1.09);
+}
+
+
+
+
+/*Button*/
+
+
+
+.bttn{
+  position: relative; 
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #0ef;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+z-index: 1;
+overflow: hidden;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.bttn::before{
+   content: '';
+   position: absolute;
+   top: -100%;
+   left: 0;
+   width: 100%;
+   height: 300%;
+   background: linear-gradient(#290808, #0ef,  #081b29, #0ef);
+   z-index: -1;
+   transition: .5s;
+}
+
+.bttn:hover::before{
+   top: 0;
+}
+.bttn:hover{
+   transform: scaleX(1.06);
+}
+
+
+/*Fim button*/
+
+/*MODAL CADASTRO*/
+.form-not{
+  
+    display: flex;
+    flex-direction: column;
+}
+.form-not label{
+  margin-left: 10px;
+  color: rgb(1, 65, 69);
+}
+textarea,
+select,
+.form-not input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 23px;
+    background: #ffffff;
+    box-shadow: inset 6px 6px 12px #e3e3e3,
+                inset -6px -6px 12px #ffffff;
+    border: 1px solid #bdbdbd;
+    margin-bottom: 25px;
+    
+}
+textarea:focus,
+select:focus,
+.form-not input:focus{
+  outline: none;
+  border: none;
+  border: 1px solid #08697a;
+}
+
+.form-not textarea{
+margin-bottom: 10px;
+resize: none;
+}
+.form-not select{
+margin-bottom: 10px;
+}
+.form-not button{
+width: 100%;
+}
+/*FIM MODAL CADASTRO*/
+.sub-mennu{
+  width:19%;
+    height: 100%;
+    background-color:transparent;
+    position: relative;
+  
+}
+  .menu-lateral{
+    width:16%;
+    height: 100%;
+    background-color:#022364;
+    position: relative;
+    box-shadow:4px 4px 4px #d5d6d8;
+    position: fixed;
+
+  }
+
+  .main-principal{
+      width:100%;
+  }
+
+  
+
+  .logo{
+    background-color:transparent;
+    height:65px;
+    width: 100%;
+    border-bottom:2px solid #ffffff;
+  }
+  .logo h1{  
+      display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#c42617;
+    font-size:2rem;
+
+    font-weight:1000;
+    text-align: center;
+
+  }
+
+  .lar-menu-lateral{
+    background-color:transparent;
+    height:auto;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 0 20px;
+     padding-top:100px;
+  }
+
+  .menu-lateral-links{
+     width: 100%;
+     height:100%;
+     border-radius: 9px;
+     background: #F0F1F3;
+     box-shadow:  2px 2px 10px #121212,
+                  -5px -5px 10px #1a1a1a;
+   margin:18px 0;
+   padding:4px 0;
+   border-radius:10px;
+   transition: all 0.5s ease-in-out;
+  
+  }
+
+  .menu-lateral-links a{
+    display:flex;
+   
+    justify-content:center;
+    align-items:center;
+    color:#c42617;
+    font-weight:200;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    padding: 8px;
+    
+  }
+
+  .menu-lateral-links a:hover{
+    transform:scaleX(1.07);
+ 
+
+  }
+  .definicao:hover,
+  .menu-lateral-links:hover{
+    background-color: #0e665c;
+    border-radius: 18px;
+  }
+   .definicao{
+    position:absolute;
+    bottom:0;
+    width: 80%;
+    display:flex;
+    padding:10px 10px;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+  margin: 10px;
+    border-radius: 10px;
+    background: #F0F1F3;
+    box-shadow:  5px 5px 7px #090909,
+                 -5px -5px 7px #070707;
+    transition: all .5s ease-in-out;
+    white-space: nowrap;
+  }
+
+  .definicao a{
+    color:#c42617;
+    text-decoration: none;
+  }
+  .menu-lateral-links i,
+  .definicao i{
+    margin-right:8px;
+  }
+
+.main{
+    height: 100vh;
+    width: 100%;
+    padding: 4px 10px;
+    
+}
+
+.main .cabeca{
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #10037f;
+}
+
+.cabeca a{
+   
+
+  padding: 10px 70px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  box-shadow: 4px 4px 6px 0 rgba(7, 7, 7, 0.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  letter-spacing: 1px;
+  color: #ff0000;
+  z-index: 1;
+  transition: .6s;
+}
+
+.cabeca a:hover{
+    transform: scaleX(1.06);
+    color: #ffc2bd;
+
+    letter-spacing: 4px;
+    color: #fff;
+    background: #030784;
+
+}
+
+/*Inicio Noticia*/
+.div-noticias{
+    margin-top: 40px;
+    position: relative;
+}
+
+.notic-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #6e6e6e;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+.pesquisar  {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.pesquisar  input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pesquisar  button[type="submit"] {
+  background-color: #4e99e9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+
+.pesquisar  button[type="submit"]:hover {
+
+  color: rgb(255, 255, 255);
+  background-color: blue;
+}
+
+
+.not-cadastr{
+    background-color: #c42617;
+    padding: 10px 15px;
+    border-radius: 50%;
+
+    color: #fff;
+    border-radius: 50%;
+background: #b10202;
+box-shadow:  2px 2px 2px #880202,
+             -2px -2px -2px #da0202;
+             margin-right: 10PX;
+}
+
+
+
+/*divs do dashboard*/
+
+.cabec{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cabec .div-icon {
+    border-radius: 12px;
+
+    background: #A22014;
+    box-shadow:  6px 6px 11px #951d12,
+                 -6px -6px 11px #af2316;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cabec .div-icon i{
+color: #cecece;
+font-size: 45px;
+}
+.divv-box{
+    display: flex;
+    
+    width:280px;
+    border-radius: 18px;
+    background: #A22014;
+    box-shadow:  2px 2px 2px #790c0c,
+                 -2px -2px 2px #790c0c;
+             padding: 15px;
+             padding-top: 20px;
+          margin: 20px 10px;
+          
+    }
+    
+    .divv-box .div-icon,
+    .divv-box .div-textos{
+    width: 50%;
+    }
+    .divv-box div{
+        margin: 0 5px;
+    }
+    .divv-box .div-textos{
+    line-height: 20px;
+
+    }
+    
+    .divv-box .div-textos strong{
+    font-size: 25px;
+    color: #ffffff;
+    }
+    
+    .divv-box .div-textos p{
+    color: #ffecec;
+    }
+    
+    .divv-box .div-textos a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffc2bc;
+    }
+       @media screen and (max-width:951px){
+        .logo h1{
+          font-size: 25px;
+        }
+       }
+
+       @media screen and (max-width:860px){
+        .sub-mennu,
+        .menu-lateral{
+         margin-right: 16%;
+        }
+        .logo h1{
+          font-size: 22px;
+        }
+        .definicao i,
+        .menu-lateral-links i{
+          font-size: 18px;
+        }
+
+        .div-noticias table{
+overflow-x: auto;
+
+        }
+
+
+
+        .definicao span,
+        .menu-lateral-links span{
+          display: none;
+        }
+
+
+       }
+
+
+    @media screen and (max-width:639px){
+      .sub-mennu,
+      .menu-lateral{
+        display: none;
+      }
+      
+      #navegacao{
+        margin: 0;
+      
+      }
+            
+      .icon-nome{
+      width: 100%;
+      }
+
+      
+      
+      }
